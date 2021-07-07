@@ -1,0 +1,48 @@
+{
+  /*
+   * Taken from
+   * https://raw.githubusercontent.com/markuswind/apollo-server-typescript-boilerplate/master/tsconfig.json
+   */
+  "compilerOptions": {
+    "target": "es2018",
+    "outDir": "dist",
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "declaration": true,
+    "inlineSourceMap": true,
+    "esModuleInterop": true,
+
+    /* Strict Type-Checking Options */
+    "strictNullChecks": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Debugging Options */
+    "traceResolution": false,
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "pretty": true,
+
+    /* Experimental Options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+
+    "lib": ["es2018", "esnext"],
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types", "src/generated"],
+
+    /* Absolute imports */
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules/**"],
+  "compileOnSave": false
+}
