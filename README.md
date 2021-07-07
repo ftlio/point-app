@@ -76,10 +76,12 @@ mutation createUser{
 
 mutation loginEmail {
   login(input: {
-    email: "andrewlen@gmail.com",
+    email: "blah@example.com",
     password: "asdf1234"
   })
 }
+
+# From there, we'd need to add the login JWT as a header of form `Authorization: Bearer <JWT>`
 
 mutation loginPhoneNumber {
   login(input: {
